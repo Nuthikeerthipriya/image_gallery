@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h2>NUTHI'S GALLERY</h2>
+
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src=
+"C:\Users\91955\OneDrive\Desktop\Good-Beach-Background-Free-Download.webp"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"C:\Users\91955\OneDrive\Desktop\Sample-png-image-1mb.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"C:\Users\91955\OneDrive\Desktop\sea-coast-stones-sunset-spain-11570322105cbn0mr6pp1.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"C:\Users\91955\OneDrive\Desktop\green-nature-fields-scenario-1920x1080-nature-fields-hd-art-wallpaper-preview.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src=
+"C:\Users\91955\OneDrive\Desktop\night-city-lightning-storm-wallpaper-preview.jpg"
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
